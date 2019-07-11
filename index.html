@@ -10,18 +10,23 @@
     <body>
 <!--    Navigation Bar-->
         <nav class="navbar" style="align-items: center;">
-            <a class="pointer" style="font-size: 20px;" href="index.html"><i class="fas fa-bars"></i></a>
-            
-            <a href="index.html"><img class="pointer" height="32" src="images/youtube.png" alt="Youtube Logo image"/></a>
-            <a class="pointer" href="index.html"><h2 style="color: white;margin-right: 100px;">Youtube</h2></a>
+            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; justify-content: flex-start; background-color:  rgb(40,40,40); width:32%;">
+                <a class="pointer" style="font-size: 18px;" href="index.html"><i class="fas fa-bars"></i></a>
 
-            <div style="width:30%; height: 90%;"><input type="search" style="width: 100%;"></div>
-            <button class="btns" style="background-color: gray;" href="index.html"><i class="fas fa-search"></i></button>
+                <a href="index.html"><img class="pointer" height="32" src="images/youtube.png" alt="Youtube Logo image"/></a>
+                <a class="pointer" href="index.html"><h3 style="color: white;margin-left: -15px;">Youtube</h3></a>
+            </div>
             
-            <a class="pointer" href="index.html"><i class="fas fa-bell"></i></a>
-            <a class="pointer" href="index.html"><i class="fas fa-inbox"></i></a>
-            <a class="pointer" href="index.html"><i class="fas fa-user-circle"></i></a>
- 
+            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; background-color:  rgb(40,40,40); width:39%;">
+                <div style="width:82%; height: 90%;flex-grow: 1"><input type="search" style="width: 100%;"></div>
+                <button class="btns" style="background-color: gray;padding: 0;flex-grow: 1" href="index.html"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; justify-content: flex-end; background-color:  rgb(40,40,40); width:25%;">
+                <a class="pointer" style="font-size: 25px;" href="index.html"><i class="fas fa-inbox"></i></a>
+                <a class="pointer" style="font-size: 25px;" href="index.html"><i class="fas fa-bell"></i></a>
+                <a class="pointer" style="font-size: 25px;" href="index.html"><i class="fas fa-user-circle"></i></a>
+            </div>
         </nav>
 
 
@@ -46,15 +51,39 @@
             
             <div class="flex-container" style="justify-content: center;">
                 <div class="flex-container">
-                    <div style="margin-right: 10px;"><a style="" class="AvatarBtns"><img style="border-radius: 35px;" width="60" src="images/odin_avatar.jpg" alt="Image of Uploader"/></a></div>
-                    <p style="">The Odin Project <br><span style="color: rgb(145,145,145);">Published on Feb 27, 2014</span></p>
+                    <div style="margin-right: 10px;"><a class="AvatarBtns"><img style="border-radius: 35px;" width="60" src="images/odin_avatar.jpg" alt="Image of Uploader"/></a></div>
+                    <p style="">The Odin Project <br><span class="hintText">Published on Feb 27, 2014</span></p>
                     <div style="align-self: center;margin-left: auto;padding-right: 16px;"><a class="subscribebtn">SUBSCRIBE 700</a></div>
                 </div>
                 
-                <div class="flex-container" style="width: 85%;line-height: 22px;">
-                    How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open
+                <div class="flex-container" style="line-height: 22px; border-bottom: 1px solid rgb(50,50,50);">
+                    <div style="margin-left: 70px;padding-right: 60px;">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open
                     <br>
-                    <span style="color: rgb(145,145,145);font-size: 14px;">SHOW MORE</span>
+                    <span class="hintText">SHOW MORE</span>
+                    </div>
+                </div>
+                <div class="flex-container" style="line-height: 22px;margin-bottom: 20px;">
+                    <div style="padding-right: 60px;">
+                        <div style="margin-bottom: 5px; margin-top: 25px; font-size: 18px;">12 Comments</div>
+                        <br>
+                        <div class="flex-container" style="align-items: center;">
+                            <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" src="images/viewer%20photo.jpg" alt="Viewer Profile Picture"/>
+                            <span class="hintText" style="border-bottom: 1px solid rgb(50,50,50);">Add a public comment...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container" style="margin-bottom: 20px;">
+                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic1.jpg" alt="Viewer Profile Picture"/>
+                    <div style="font-size: 14px;">
+                        <div style="padding-bottom: 6px;"><b>Wing N.</b> <span class="hintText">1 year ago (edited)</span></div>
+                        <div style="padding-bottom: 6px;">"use your powers for good" <br> haha thank you for the video.</div>
+                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                            <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 1</button>
+                            <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
+                            <span class="hintText">REPLY</span>
+                        </div>
+                    </div>
+                
                 </div>
             </div>
         </div>

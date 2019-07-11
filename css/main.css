@@ -25,10 +25,11 @@ body{
     height: auto;
 }
 .btns{
-    background-color: rgb(10,10,10);
+    background-color: rgb(20,20,20);
     color: lightgrey;
     border: none;
     font-size: 16px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -43,7 +44,7 @@ body{
 }
 .navbar{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: space-around;
     background-color: rgb(40,40,40);
     color: lightgrey;
@@ -88,6 +89,7 @@ color: lightgray;
 }
 .hintText{
     color:rgb(145,145,145);
+    font-size: 14px;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 955px) {
