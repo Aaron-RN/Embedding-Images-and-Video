@@ -64,7 +64,56 @@ body{
     width: 100%;
     background-color: rgb(20,20,20);
 }
+
+.border-b-grey{
+    border-bottom: 1px solid rgb(50,50,50);
+}
+.border-b-gray{
+    border-bottom: 1px solid rgb(50,50,50);
+}
+.border-rad-35{
+    border-radius: 35px;
+}
+
+.line-22{
+    line-height: 22px;
+}
+
+.width-80{
+    width: 82%;
+}
+.width-100{
+    width: 100%;
+}
+
+.text-white{
+    color: white;
+}
+.text-lightgrey{
+    color: lightgray;
+}
+.text-lightgray{
+    color: lightgray;
+}
+.text-dodgerblue{
+    color: dodgerblue;
+}
+.size-14{
+    font-size: 14px;
+}
+.size-18{
+    font-size: 18px;
+}
+.size-20{
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+
+
 .navbar{
+    align-items: center;
     display: flex;
     flex-wrap: nowrap;
     align-content: space-around;
@@ -85,6 +134,28 @@ body{
     border-radius: 40px;
     background-color: rgb(60,60,60);
 }
+.nav-item-1{
+    flex-wrap: nowrap;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color:  rgb(40,40,40); 
+    width:32%;
+}
+.nav-item-2{
+    flex-wrap: nowrap; 
+    align-items: center;
+    background-color:  rgb(40,40,40);
+    width:39%;
+}
+.nav-item-3{
+    flex-wrap: nowrap; 
+    align-items: center; 
+    justify-content: flex-end; 
+    background-color:  rgb(40,40,40); 
+    width:25%;
+}
+
+
 a{
     text-decoration: none;
     color:white;

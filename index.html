@@ -5,25 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/positioning.css">
         <title>Aaron and Abner Embedding Video and Images</title>
     </head>
     <body>
 <!--    Navigation Bar-->
-        <nav class="navbar" style="align-items: center;">
+        <nav class="navbar">
 <!--        Drop Down Bars Icon and Youtube Logo-->
-            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; justify-content: flex-start; background-color:  rgb(40,40,40); width:32%;">
-                <a class="pointer" style="font-size: 18px;" href="index.html"><i class="fas fa-bars"></i></a>
+            <div class="flex-container nav-item-1">
+                <a class="pointer size-18" href="index.html"><i class="fas fa-bars"></i></a>
 
                 <a href="index.html"><img class="pointer" height="32" src="images/youtube.png" alt="Youtube Logo image"/></a>
-                <a class="pointer" href="index.html"><h3 style="color: white;margin-left: -15px;">Youtube</h3></a>
+                <a class="pointer" href="index.html"><h3 class="text-white margin-l-m15">Youtube</h3></a>
             </div>
 <!--        Search Bar and Button-->
-            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; background-color:  rgb(40,40,40); width:39%;">
-                <div style="width:82%;flex-grow: 1;"><input type="search" placeholder="Search" class="searchBar"></div>
-                <button class="searchBtn" style="flex-grow: 1"><i class="fas fa-search"></i></button>
+            <div class="flex-container nav-item-2">
+                <div  class="flexgrow-1 width-80"><input type="search" placeholder="Search" class="searchBar"></div>
+                <button class="searchBtn flexgrow-1"><i class="fas fa-search"></i></button>
             </div>
 <!--        User Notifications, Inbox and User Profile Link-->
-            <div class="flex-container" style="flex-wrap: nowrap; align-items: center; justify-content: flex-end; background-color:  rgb(40,40,40); width:25%;">
+            <div class="flex-container nav-item-3">
                 <a class="navBtn" href="index.html"><i class="fas fa-inbox"></i></a>
                 <a class="navBtn" href="index.html"><i class="fas fa-bell"></i></a>
                 <a class="navBtn" href="index.html"><i class="fas fa-user-circle"></i></a>
@@ -33,18 +34,18 @@
 
 
 <!--    Main Section-->
-        <main class="flex-container" style="justify-content: center;">
+        <main class="flex-container flex-center">
         <div class="mainsection">
 <!--        Embedding Video-->
             <div><iframe width="90%" height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
 <!--        Video Title, Views, Likes, Dislikes and Share button-->
-            <div class="flex-container" style="justify-content: flex-start;flex-direction: column;padding-top: 20px;">
-                <div style="font-weight: bold;font-size: 20px;">Contributing to Open Source Part I: The Easy Way</div>
-                <div class="flex-container" style="flex-direction: row;padding: 10px; border-bottom: 1px solid rgb(50,50,50);">
-                    <div style="color: lightgray;align-self: center;">49,520 views</div>
-                    <div style="margin-left: auto;padding-right: 20px;">
+            <div class="flex-container flex-center flex-col pad-t-20">
+                <div class="bold size-20">Contributing to Open Source Part I: The Easy Way</div>
+                <div class="flex-container pad-10 border-b-grey">
+                    <div class="text-lightgray alignself-center">49,520 views</div>
+                    <div class="margin-l-auto pad-r-20">
                         <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 356</button>
                         <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i> 13</button>
                         <button class="btns" name="shareButton" ><i class="fas fa-share"></i>SHARE</button>
@@ -53,40 +54,40 @@
             </div>
 
 <!--        Video uploader, Video Date Published, Subscribers-->
-            <div class="flex-container" style="justify-content: center;">
+            <div class="flex-container flex-center">
                 <div class="flex-container">
-                    <div style="margin-right: 10px;"><a class="AvatarBtns" href="index.html"><img style="border-radius: 35px;" width="60" src="images/odin_avatar.jpg" alt="Image of Uploader"/></a></div>
-                    <p style=""><a href="index.html">The Odin Project</a> <br><span class="hintText">Published on Feb 27, 2014</span></p>
-                    <div style="align-self: center;margin-left: auto;padding-right: 16px;"><a class="subscribebtn">SUBSCRIBE 700</a></div>
+                    <div class="margin-r-10"><a class="AvatarBtns" href="index.html"><img class="border-rad-35" width="60" src="images/odin_avatar.jpg" alt="Image of Uploader"/></a></div>
+                    <p><a href="index.html">The Odin Project</a> <br><span class="hintText">Published on Feb 27, 2014</span></p>
+                    <div class="alignself-center margin-l-auto pad-r-15"><a class="subscribebtn">SUBSCRIBE 700</a></div>
                 </div>
 
 <!--            Video Description-->
-                <div class="flex-container" style="line-height: 22px; border-bottom: 1px solid rgb(50,50,50);">
-                    <div style="margin-left: 70px;padding-right: 60px;">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open
+                <div class="flex-container line-22 border-b-grey">
+                    <div class="margin-l-70 pad-r-60">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open
                     <br>
                     <span class="hintText pointer">SHOW MORE</span>
                     </div>
                 </div>
                 
 <!--            Add your own comment-->
-                <div class="flex-container" style="line-height: 22px;margin-bottom: 20px;">
-                    <div style="padding-right: 60px; width: 100%">
-                        <div style="margin-bottom: 5px; margin-top: 25px; font-size: 18px;">12 Comments</div>
+                <div class="flex-container line-22 margin-b-20">
+                    <div class="width-100 pad-r-60">
+                        <div class="margin-t-25 margin-b-5 size-18">12 Comments</div>
                         <br>
-                        <div class="flex-container" style="align-items: center;flex-wrap: nowrap;">
-                            <div><img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" src="images/viewer%20photo.jpg" alt="Viewer Profile Picture"/></div>
-                            <div style="width: 100%;"><div class="hintText" style="border-bottom: 1px solid rgb(50,50,50);padding-bottom: 5px;">Add a public comment...</div></div>
+                        <div class="flex-container alignitems-center flex-nowrap">
+                            <div><img class="AvatarBtns border-rad-35 margin-r-20" width="45" src="images/viewer%20photo.jpg" alt="Viewer Profile Picture"/></div>
+                            <div class="width-100"><div class="hintText border-b-grey pad-b-5">Add a public comment...</div></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- START COMMENT SECTION -->
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic1.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Wing N.</b> <span class="hintText">1 year ago (edited)</span></div>
-                        <div style="padding-bottom: 6px;">"use your powers for good" <br> haha thank you for the video.</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap line-22 margin-b-20">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic1.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Wing N.</b> <span class="hintText">1 year ago (edited)</span></div>
+                        <div class="pad-b-5">"use your powers for good" <br> haha thank you for the video.</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 7</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -95,12 +96,12 @@
                 </div>
 
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic2.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>ButtonMasher</b> <span class="hintText">3 years ago </span></div>
-                        <div style="padding-bottom: 6px;">Wow this video was super helpful, clear, and concise.<br>Thank you very much.</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container margin-b-20 flex-nowrap line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic2.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>ButtonMasher</b> <span class="hintText">3 years ago </span></div>
+                        <div class="pad-b-5">Wow this video was super helpful, clear, and concise.<br>Thank you very much.</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 1</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -108,12 +109,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic3.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Sibe Cute</b> <span class="hintText">2 years ago</span></div>
-                        <div style="padding-bottom: 6px;">thanks a lot for video</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic3.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Sibe Cute</b> <span class="hintText">2 years ago</span></div>
+                        <div class="pad-b-5">thanks a lot for video</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 2</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -121,12 +122,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic4.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b> andrewscheuermann05</b> <span class="hintText">4 years ago</span></div>
-                        <div style="padding-bottom: 6px;">FYI: the edit button has changed to a diagonal pencil</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic4.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b> andrewscheuermann05</b> <span class="hintText">4 years ago</span></div>
+                        <div class="pad-b-5">FYI: the edit button has changed to a diagonal pencil</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 1</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -134,12 +135,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic5.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Sampath Lokuge</b> <span class="hintText">3 years ago</span></div>
-                        <div style="padding-bottom: 6px;">Nice.Thanks a lot :)</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic5.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Sampath Lokuge</b> <span class="hintText">3 years ago</span></div>
+                        <div class="pad-b-5">Nice.Thanks a lot :)</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 1</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -147,12 +148,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic6.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b> Luyi Ren</b> <span class="hintText">1 year ago (edited)</span></div>
-                        <div style="padding-bottom: 6px;">Your video helped me try to make my first contribution! Thank you so much!</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic6.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b> Luyi Ren</b> <span class="hintText">1 year ago (edited)</span></div>
+                        <div class="pad-b-5">Your video helped me try to make my first contribution! Thank you so much!</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -160,12 +161,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic7.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>David Godfrey</b> <span class="hintText">1 year ago</span></div>
-                        <div style="padding-bottom: 6px;">What if the project is huge and the issues involve things you don't even understand?</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic7.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>David Godfrey</b> <span class="hintText">1 year ago</span></div>
+                        <div class="pad-b-5">What if the project is huge and the issues involve things you don't even understand?</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -173,12 +174,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic8.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Philip Gouldman</b> <span class="hintText">1 year ago</span></div>
-                        <div style="padding-bottom: 6px;">This video didnt help. I see it was uploaded 3 years ago but I wonder if that would really matter. I'm trying to submit my solution to the Ruby: Ceasar Cypher project but can't really figure out how to do it....it's on my Github repository repository entitled Odin-Project. help :( </div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic8.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Philip Gouldman</b> <span class="hintText">1 year ago</span></div>
+                        <div class="pad-b-5">This video didnt help. I see it was uploaded 3 years ago but I wonder if that would really matter. I'm trying to submit my solution to the Ruby: Ceasar Cypher project but can't really figure out how to do it....it's on my Github repository repository entitled Odin-Project. help :( </div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -186,12 +187,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic9.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>1newbbie</b> <span class="hintText">9 months ago</span></div>
-                        <div style="padding-bottom: 6px;">A remark to what happening at <a href="index.html" style="color: dodgerblue;">04:12</a> is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on repository entitled Odin-Project. help the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic9.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>1newbbie</b> <span class="hintText">9 months ago</span></div>
+                        <div class="pad-b-5">A remark to what happening at <a href="index.html" class="text-dodgerblue">04:12</a> is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on repository entitled Odin-Project. help the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -199,26 +200,12 @@
                     </div>
                 </div>
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic10.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Richard Dickinson</b> <span class="hintText">4 years ago</span></div>
-                        <div style="padding-bottom: 6px;">I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to contributing on GitHub. Shame I didn't see this video earlier and I hope my pull request is dealt with soon.....</div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
-                            <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
-                            <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
-                            <span class="hintText">REPLY</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic11.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b> schneems schneems</b> <span class="hintText">1 year ago</span></div>
-                        <div style="padding-bottom: 6px;">Apps can help people get started contributing too. I recommend<a href="index.html" style="color: dodgerblue;">https://www.codetriage.com</a></div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic10.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Richard Dickinson</b> <span class="hintText">4 years ago</span></div>
+                        <div class="pad-b-5">I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to contributing on GitHub. Shame I didn't see this video earlier and I hope my pull request is dealt with soon.....</div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -227,12 +214,26 @@
                 </div>
 
 
-                <div class="flex-container" style="margin-bottom: 20px;flex-wrap: nowrap;line-height: 22px;">
-                    <img class="AvatarBtns" style="border-radius: 35px;margin-right: 20px;" width="45" height="45" src="images/commentpic12.jpg" alt="Viewer Profile Picture"/>
-                    <div style="font-size: 14px;">
-                        <div style="padding-bottom: 6px;"><b>Roshan Jossey</b> <span class="hintText">1 years ago</span></div>
-                        <div style="padding-bottom: 6px;">I've started on a project to help beginners to get started on contributing to open source projects. It's a hands-on tutorial to learn the general workflow in github. Check it out at <br> <a href="index.html" style="color: dodgerblue;">https://github.com/Roshanjossey/first-contributions</a></div>
-                        <div class="flex-container" style="flex-direction: row;align-items: center;">
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic11.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b> schneems schneems</b> <span class="hintText">1 year ago</span></div>
+                        <div class="pad-b-5">Apps can help people get started contributing too. I recommend <a href="index.html" class="text-dodgerblue">https://www.codetriage.com</a></div>
+                        <div class="flex-container alignitems-center">
+                            <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i>  </button>
+                            <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
+                            <span class="hintText">REPLY</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex-container flex-nowrap margin-b-20 line-22">
+                    <img class="AvatarBtns border-rad-35 margin-r-20" width="45" height="45" src="images/commentpic12.jpg" alt="Viewer Profile Picture"/>
+                    <div class="size-14">
+                        <div class="pad-b-5"><b>Roshan Jossey</b> <span class="hintText">1 years ago</span></div>
+                        <div class="pad-b-5">I've started on a project to help beginners to get started on contributing to open source projects. It's a hands-on tutorial to learn the general workflow in github. Check it out at <br> <a href="index.html" class="text-dodgerblue">https://github.com/Roshanjossey/first-contributions</a></div>
+                        <div class="flex-container alignitems-center">
                             <button class="btns" name="likeButton" ><i class="far fa-thumbs-up"></i> 8</button>
                             <button class="btns" name="dislikeButton" ><i class="far fa-thumbs-down"></i></button>
                             <span class="hintText">REPLY</span>
@@ -246,7 +247,7 @@
 <!--    Right Side Bar-->
         <div class="sidenav">
             <h3>Up Next</h3>
-            <div class="sidevid" style="border-bottom: 1px rgb(40,40,40) solid;margin-bottom: 16px;margin-top: 16px;"><img src="images/1.webp" class="imgthumbnails" alt="World Tycoon"/><span class="recommendedvids">World Tycoon<br><span class="hintText">Geronotopolus<br>30k views</span></span></div>
+            <div class="sidevid border-b-grey margin-t-15 margin-b-15"><img src="images/1.webp" class="imgthumbnails" alt="World Tycoon"/><span class="recommendedvids">World Tycoon<br><span class="hintText">Geronotopolus<br>30k views</span></span></div>
             
             <div class="sidevid"><img src="images/2.webp" class="imgthumbnails" alt="Learn to Swim"><span class="recommendedvids">Learn to Swim like me (INsanelyFast)<br><span class="hintText">Aaron Rory<br>300 views</span></span></div>
             
