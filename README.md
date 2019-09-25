@@ -1,4 +1,4 @@
-# (PROJECT: EMBEDDING IMAGES AND VIDEO -
+# (PROJECT: EMBEDDING IMAGES AND VIDEOS)
 ### Authors: Abner and Aaron
 Aaron's Github Profile: https://github.com/Aaron-RN  
 Abner's Github Profile: https://github.com/Abner21  
